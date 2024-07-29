@@ -62,7 +62,7 @@ class _NotesDisplayState extends State<NotesDisplay> {
         if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
           return const Center(child: Text('No notes available'));
         }
-
+        //listing all the notes
         List notesList = snapshot.data!.docs;
 
         return ListView.builder(
